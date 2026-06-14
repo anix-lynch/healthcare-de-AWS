@@ -1,0 +1,67 @@
+{
+  "proof": "bullet6_three_cloud_actual_schema_reconciliation",
+  "contract_source": "openfda_fact_contract_v1.0.0.json (read from file)",
+  "per_cloud_schema_validation": {
+    "contract_fingerprint": "689ddeb815c39b32",
+    "GCP": {
+      "cloud": "GCP",
+      "schema_fingerprint": "689ddeb815c39b32",
+      "missing": [],
+      "extra": [],
+      "type_mismatches": {},
+      "valid": true
+    },
+    "Fabric": {
+      "cloud": "Fabric",
+      "schema_fingerprint": "689ddeb815c39b32",
+      "missing": [],
+      "extra": [],
+      "type_mismatches": {},
+      "valid": true
+    },
+    "AWS_S3": {
+      "cloud": "AWS-S3",
+      "schema_fingerprint": "689ddeb815c39b32",
+      "missing": [],
+      "extra": [],
+      "type_mismatches": {},
+      "valid": true
+    }
+  },
+  "schema_fingerprints_match_all": true,
+  "all_clouds_schema_valid": true,
+  "business_metric_reconciliation": {
+    "record_count": {
+      "gcp": 3000,
+      "fabric": 3000,
+      "aws": 3000,
+      "all_match": true
+    },
+    "serious_count": {
+      "gcp": 1538,
+      "fabric": 1538,
+      "aws": 1538,
+      "all_match": true
+    },
+    "serious_rate": {
+      "gcp": 0.5127,
+      "fabric": 0.5127,
+      "aws": 0.5127,
+      "all_match": true
+    },
+    "distinct_drugs": {
+      "gcp": 562,
+      "fabric": 562,
+      "aws": 562,
+      "all_match": true
+    },
+    "total_reactions": {
+      "gcp": 8269,
+      "fabric": 8269,
+      "aws": 8269,
+      "all_match": true
+    }
+  },
+  "all_business_metrics_match": true,
+  "verdict": "GREEN \u2014 each cloud's ACTUAL schema fingerprinted from real data, validated vs the canonical contract (no missing/extra/type-mismatch), fingerprints identical, and business metrics reconcile exactly across GCP/Fabric/AWS."
+}

@@ -1,0 +1,12 @@
+{
+  "contract": "openfda_fact_v1.0.0",
+  "grain": "safetyreportid",
+  "columns": [
+    {"name": "safetyreportid", "type": "string"},
+    {"name": "primary_drug", "type": "string"},
+    {"name": "is_serious", "type": "boolean"},
+    {"name": "n_drugs", "type": "integer"},
+    {"name": "n_reactions", "type": "integer"},
+    {"name": "occurcountry", "type": "string"}
+  ]
+}
